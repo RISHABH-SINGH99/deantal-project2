@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --blue: #00b8b8;
+    --black: #333;
+    --white: #fff;
+    --light-color: #666;
+    --light-bg: #eee;
+    --border: .2rem solid rgba(0, 0, 0, 1);
+    --box-shadow: 0.5rem 1rem rgba(0, 0, 0, 1);
+}
+
+* {
+
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none !important;
+    text-transform: capitalize;
+}
+
+
+ 
+.header {
+     /* position: relative;   */
+
+        display: flex;
+
+    font-weight: 600;
+    margin-top: 10px;
+    border-bottom: 5px solid var(--light-bg);
+    padding: 25px;
+}
+.header.active{
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+}
+.align-item-center{
+
+}
+.logo {
+    text-decoration: none;
+    margin-left: 150px;
+    color: var(--black);
+    font-size: 2rem;
+}
+
+.logo span {
+    color: var(--blue);
+}
+
+.nav {
+    display: inline-block;
+    margin: 20px;
+    margin-left: 240px;
+
+}
+
+.nav a {
+    list-style: none;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.7rem;
+    color: var(--black);
+}
+
+.nav a:hover {
+    color: var(--blue);
+}
+
+
+.link-btn {
+    position: absolute;
+    margin-left: 140px;
+    top: 20px;
+    margin-top: 20px;
+    display: inline block;
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+    background-color: var(--blue);
+    cursor: pointer;
+    font-size: 1.7rem;
+    color: var(--white);
+}
+
+.link-btn:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+#menu-btn {
+    margin-left: 390px;
+    font-size: 2.5rem;
+    color: var(--black);
+    cursor: pointer;
+
+    display: none;
+
+}
+
+
+
+
+*::-webkit-scrollbar {
+    height: .5rem;
+    width: 1rem;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--blue);
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6.5rem;
+}
+
+
+/* <!-- home section start  --> */
+section{
+    padding: 10rem 2rem;
+}
+.container{
+    position: relative;
+    margin-top: 200px;
+    margin-left: 100px;
+}
+.home{
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 1px;
+    margin-left: 0px;
+    background: url(/dentist-in-cedar-park-tx-town-center-dental-cedar-park-1536x1024.jpg)no-repeat ;
+    background-size: cover;
+    background-position: center;
+    height: 100rem;
+    
+
+}
+.home a{ 
+   
+  margin-left: 0px;
+  margin-top: 290px;
+}   
+.content{
+    width: 55rem;
+}
+.content h3{
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: var(--black);
+}
+.content p{
+    line-height: 2;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    padding: 0;
+
+}
+
+
+
+
+
+
+
+
+.icon-bar {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: var(--light-bg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .header {
+        background-color: var(--light-bg);
+    }
+
+    .nav {
+        margin-left: 0;
+    }
+
+    .logo {
+        margin-left: 20px;
+    }
+
+    #menu-btn {
+        display: block; /* Show the menu button on smaller screens */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+
+    }
+
+    .link-btn {
+        display: none;
+    }
+    section{
+        padding: 7rem 2rem;
+    }
+}
+
+
+
+@media (max-width:768px) {
+    section{
+        padding: 5rem 2rem;
+    }
+    #menu-btn {
+        display: inline-block;
+        margin-left: 550px;
+        transition: .2s linear;
+    }
+
+    #menu-btn.fa-times{
+        transform: rotate(180deg);
+    }
+  
+    .header .nav {
+        transition: .2s linear;
+        display: flex;
+        position: absolute;
+        margin-left: -10px;
+        top: 20%;
+        left: 0;
+        right: 0;
+        background-color: var(--white);
+        border-bottom: 5px solid var(--light-bg);
+        padding: 1rem 0;
+        text-align: center;
+        flex-flow: column;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+       
+    }
+    .header .nav.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 100%); 
+    }
+
+
+    .header .nav a{
+        margin: 1rem 0;
+        font-size: 2rem;
+    }
+
+
+    .logo {
+        margin-left: 1px;
+    }
+
+    .home{
+        background-position: left;
+    }
+
+    .home .content{
+        width: auto;
+    
+    }
+    .home.content h3{
+        font-size: 3rem;
+
+    }
+
+}
+
+@media (max-width:450px) {
+    html {
+
+        font-size: 50%;
+    }
+
+    .home.content h3{
+        font-size: 4rem;
+        
+    }
+} */

@@ -1,0 +1,873 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.1rem;
+    font-weight: 420;
+
+}
+
+
+:root {
+    --blue: #00b8b8;
+    --black: #333;
+    --white: #fff;
+    --light-color: #666;
+    --light-bg: #eee;
+    --border: .2rem solid rgba(0, 0, 0, 1);
+    --box-shadow: 0.5rem 1rem rgba(0, 0, 0, 1);
+}
+
+
+/* hader start here */
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid var(--light-bg);
+    box-shadow: 5px 3px 5px var(--light-color);
+}
+
+
+.divlogo a {
+    font-size: 2.5rem;
+}
+
+.divlogo {
+    margin: 40px;
+    margin-left: 300px;
+    font-size: 6px !important;
+}
+
+.divlogo span {
+    font-size: 2.5rem;
+    color: var(--blue);
+}
+
+.nav-ul {
+    display: flex;
+    margin-left: 100px;
+
+}
+
+.nav-ul li {
+    margin: 10px;
+}
+
+.nav-ul li a {
+    color: black;
+    font-size: 2rem;
+}
+
+.nav-ul li a:hover {
+    color: var(--blue);
+}
+
+
+.link-btn {
+    font-size: 2rem;
+    color: var(--black);
+    margin-left: 100px;
+    border-radius: .2rem;
+    background-color: var(--blue);
+    cursor: pointer;
+    color: var(--white);
+    padding: 5px 20px 5px 20px;
+
+}
+
+.link-btn:hover {
+    background-color: var(--black);
+    color: var(--white);
+    transition: .5s;
+}
+
+#menu-btn {
+    margin-left: 390px;
+    font-size: 2.5rem;
+    color: var(--black);
+    cursor: pointer;
+
+    display: none;
+
+}
+
+
+/* this sticky */
+.navbar {
+    padding: 2px 00px;
+    background-color: #fff;
+}
+
+
+
+
+
+/* header end hera */
+
+*::-webkit-scrollbar {
+    height: .5rem;
+    width: 1rem;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--blue);
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6.5rem;
+}
+
+
+
+
+
+/* <!-- home section start  --> */
+section {
+    display: flex;
+    padding: 10rem 2rem;
+}
+
+.container {
+    position: relative;
+    margin-top: 200px;
+    margin-left: 100px;
+}
+
+.home {
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 1px;
+    margin-left: 0px;
+    background: url(/img1.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100rem;
+
+}
+
+.home a {
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 15px;
+}
+
+.content {
+    width: 55rem;
+}
+
+.content h3 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.content p {
+    line-height: 2;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    padding: 0;
+
+}
+
+/* home section end  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* about section  */
+
+
+
+
+#h3-span {
+    margin-left: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#about {
+
+    display: flex;
+    margin-top: -10vh;
+
+}
+
+.h33 {
+    font-size: 3rem;
+    color: var(--black);
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+#btn3 {
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 3px;
+}
+
+.about span {
+    font-size: 2rem;
+    color: var(--blue);
+}
+
+.about p {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    line-height: 2;
+}
+
+/* about section end */
+
+
+
+/* <!-- service section start  --> */
+.img {
+    height: 50px;
+    width: 50px;
+}
+
+.heading {
+    position: absolute;
+    margin-left: 590px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 4rem;
+    color: var(--black);
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+
+}
+
+.service {
+    background-color: var(--light-bg);
+}
+
+.service .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    margin-left: 250px;
+    /* margin-top: 0px; */
+}
+
+.service .box-container .box {
+    text-align: center;
+    padding: 2rem;
+
+    background-color: var(--white);
+    /* box-shadow: 5px 15px 7px var(--box-shadow); */
+    box-shadow: 1px var(--box-shadow);
+
+    border-radius: .5rem;
+}
+
+.service .box-container .box img {
+    margin: 1rem 0;
+    height: 4rem;
+
+
+}
+
+.service .box-container .box h3 {
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: var(--black);
+
+}
+
+.service .box-container .box p {
+    font-size: 1.5rem;
+    color: var(--light-color);
+    line-height: 2;
+}
+
+/* <!-- service section end  --> */
+
+
+
+
+
+
+
+/* process start  */
+.process {
+
+
+    /* position: absolute; */
+    margin-left: 40px;
+    margin-top: 0;
+    text-align: center;
+    font-size: 4rem;
+    color: var(--black);
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+
+}
+
+
+.process .box-container {
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    margin-left: 250px;
+
+}
+
+.process .box-container .box {
+    background-color: var(--blue);
+    padding: 4rem;
+    border-radius: .5rem;
+    text-align: center;
+    box-shadow: 1px var(--box-shadow);
+}
+
+.process .box-container .box img {
+    height: 20rem;
+    margin: 1rem 0;
+
+}
+
+.process .box-container .box h3 {
+    font-size: 2rem;
+    color: var(--white);
+    margin: 1rem 0;
+}
+
+.process .box-container .box p {
+    font-size: 1.5rem;
+    color: var(--light-color);
+    line-height: 2;
+}
+
+.img3 {
+    width: 200px;
+    ;
+}
+
+/* process end  */
+
+
+/* reviews start  */
+.reviews .heading{
+    margin-top: -50px;
+    margin-left: 75vh;
+}
+.reviews {
+    background-color: var(--light-bg);
+}
+
+.reviews .box-container {
+    margin-top: 100px !important;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+    gap: 3rem;
+    margin-left: 60vh;
+    /* margin: auto; */
+
+}
+
+.reviews .box-container .box {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: .5rem;
+    text-align: center;
+    box-shadow: 1px var(--box-shadow);
+
+
+}
+
+.reviews .box-container .box img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+
+.reviews .box-container .box p {
+    padding: 2rem 0;
+    line-height: 2;
+    font-size: 1.5rm;
+    color: var(--light-color);
+}
+
+.reviews .box-container .box .stars {
+    padding: .5rem 1.5rem;
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    margin-bottom: 2rem;
+    display: inline-block;
+}
+
+.reviews .box-container .box .stars i {
+    font-size: 1.5rem;
+    color: var(--blue);
+
+}
+
+.reviews .box-container .box h3 {
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.reviews .box-container .box span {
+    color: var(--light-color);
+    font-size: 1.5rem;
+}
+
+/* reviews end  */
+
+/* footer start  */
+.footer {
+    background-color: var(--white);
+    position: absolute;
+}
+
+.footer .box-container {
+    display: flex;
+    margin-top: 0;
+
+    /* grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr)); */
+    gap: 15rem;
+    margin-left: 200px;
+}
+
+.footer .box-container .box {
+    text-align: center;
+}
+
+.footer .box-container .box i {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    font-size: 2rem;
+    background-color: var(--blue);
+    color: var(--white);
+    margin-bottom: 1rem;
+
+}
+
+.footer .box-container .box h3 {
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: var(--black);
+}
+
+.footer .box-container .box p {
+    font-size: 1.5rem;
+    color: var(--light-color);
+    text-transform: none;
+
+}
+
+/* footer end  */
+
+
+
+
+
+
+
+
+
+
+
+/* media quary  for tab*/
+
+@media only screen and (max-width:768px) {
+
+    .navbar .logo {
+
+        margin-left: -280px;
+        font-size: 2rem;
+
+    }
+
+    .navbar span {
+        font-size: 2rem;
+    }
+
+    .nav-ul {
+        margin-left: -150px;
+    }
+
+    .nav-ul li a {
+        font-size: 1.4rem;
+
+    }
+
+    .navbar .link-btn {
+        font-size: 1.4rem;
+        margin-left: 55px;
+        padding: 6px 12px;
+    }
+
+    .link-btn:hover {
+        background-color: var(--black);
+        color: var(--white);
+        transition: .5s;
+    }
+
+    .navbar {
+        height: 80px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10000;
+        display: flex;
+        align-items: center;
+        border-bottom: 2px solid var(--light-bg);
+        box-shadow: 5px 3px 5px var(--light-color);
+    }
+
+    /* mediaQuari Body  */
+
+    .container {
+        position: relative;
+        margin-top: 280px;
+        margin-left: 60px;
+    }
+    
+    
+    .home {
+        background: url(/bgimg.jpg) no-repeat;
+        background-size: 222vh 275vh;
+        
+    }
+    
+    .content h3 {
+        font-size: 5rem;
+        text-transform: uppercase;
+        color: var(--black);
+        font-weight: 200;
+    }
+    
+    .content p {
+        line-height: 2;
+        font-size: 1.5rem;
+        color: var(--light-color);
+    padding: 0;
+    font-weight: 300;
+
+}
+
+/* About Us MediaQuary  */
+
+#h3-span {
+    margin-left: 20px;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+#about {
+    
+    display: flex;
+    margin-top: -17vh;
+
+}
+
+.h33 {
+    font-size: 2rem;
+    color: var(--black);
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+#btn3 {
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 3px;
+}
+
+.about span {
+    
+    font-size: 2.5rem;
+    color: var(--blue);
+    
+}
+
+.about p {
+    padding: 1rem 0;
+    font-size: 1rem;
+    color: var(--light-color);
+    line-height: 2;
+}
+
+/* our services  MESIA QUARY*/
+
+
+
+.heading {
+    position: absolute;
+    margin-left: 255px;
+    margin-top: -45px;
+    text-align: center;
+    font-size: 4rem;
+    color: var(--black);
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+}
+.container {
+    position: relative;
+    margin-top: 66px;
+    margin-left: 60px;
+}
+
+.service {
+    background-color: var(--light-bg);
+}
+
+.service .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    margin-left: 40px;
+  
+}
+
+.service .box-container .box {
+    text-align: center;
+    padding: 2rem;
+
+    background-color: var(--white);
+    
+    box-shadow: 1px var(--box-shadow);
+    
+    border-radius: .5rem;
+}
+
+.service .box-container .box img {
+    margin: 1rem 0;
+    height: 4rem;
+    
+
+}
+
+.service .box-container .box h3 {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    color: var(--black);
+
+}
+
+.service .box-container .box p {
+    font-size: 1rem;
+    color: var(--light-color);
+    line-height: 2;
+}
+/* our services  MESIA QUARY end*/
+
+
+
+/* process start  */
+.process .heading{
+    margin-left: 50vh;
+}
+.process {
+
+
+    /* position: absolute; */
+    margin-left: 40px;
+    margin-top: 0;
+    text-align: center;
+    font-size: 4rem;
+    color: var(--black);
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+
+}
+
+
+.process .box-container {
+    margin-top: 78px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    margin-left: 11px;
+    margin-right: 28px;
+
+}
+
+.process .box-container .box {
+    background-color: var(--blue);
+    padding: 2rem;
+    border-radius: .5rem;
+    text-align: center;
+    box-shadow: 1px var(--box-shadow);
+}
+
+.process .box-container .box img {
+    height: 20rem;
+    margin: 1rem 0;
+
+}
+
+.process .box-container .box h3 {
+    font-size: 2rem;
+    color: var(--white);
+    margin: 1rem 0;
+}
+
+.process .box-container .box p {
+    font-size: 1rem;
+    color: var(--light-color);
+    line-height: 2;
+}
+
+.img3 {
+    width: 200px;
+    ;
+}
+
+/* process end  quary*/
+
+
+/* reviews start mida  quary */
+.reviews .heading{
+    margin-left: 50vh;
+}
+.reviews .box-container {
+    margin-top: 70px !important;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+    gap: 2rem;
+    margin-left: 17vh;
+   
+
+}
+
+.reviews .box-container .box {
+    height: 344px;
+   
+
+}
+
+/* reviews end  quary */
+
+
+/* footer start media quary */
+
+.footer .box-container {
+    display: flex;
+    margin-top: -50px;
+    gap: 6rem;
+    margin-left: 42px;}
+
+
+
+.footer .box-container .box i {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    font-size: 1.5rem;
+    background-color: var(--blue);
+    color: var(--white);
+    margin-bottom: 1rem;
+
+}
+
+.footer .box-container .box h3 {
+    font-size: 1.6rem;
+    margin: 1rem 0;
+    color: var(--black);
+}
+
+.footer .box-container .box p {
+    font-size: 1rem;
+    color: var(--light-color);
+    text-transform: none;
+
+}
+
+/* footer end  */
+
+
+}
+
+@media only screen and (max-width:414px) {
+
+    .navbar .logo {
+
+        margin-left: -290px;
+        font-size: 1.5rem;
+
+    }
+
+    .navbar span {
+        font-size: 1.5rem;
+    }
+
+    .nav-ul {
+        margin-left: -150px;
+    }
+
+    .nav-ul li a {
+        font-size: 1.4rem;
+
+    }
+
+    .navbar .link-btn {
+        font-size: 1.4rem;
+        margin-left: 55px;
+        padding: 6px 12px;
+    }
+
+    .link-btn:hover {
+        background-color: var(--black);
+        color: var(--white);
+        transition: .5s;
+    }
+
+    .navbar {
+        height: 80px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10000;
+        display: flex;
+        align-items: center;
+        border-bottom: 2px solid var(--light-bg);
+        box-shadow: 5px 3px 5px var(--light-color);
+    }
+
+
+
+
+
+}
